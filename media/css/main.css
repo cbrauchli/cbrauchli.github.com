@@ -14,6 +14,7 @@ body {
     font-size: 1em;
     line-height: 1.4;
     margin: 5em;
+    font-family: Gotham, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 ::-moz-selection {
