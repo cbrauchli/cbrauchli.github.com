@@ -22,10 +22,13 @@
 			}, false)
 		});
 
-		var theEvent = document.createEvent("MouseEvent");
-		theEvent.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-		var element = document.getElementById('aTest');
-		element.dispatchEvent(theEvent);
+		setTimeout(function() {
+			var theEvent = document.createEvent("MouseEvents");
+			theEvent.initMouseEvent("click", true, true, window, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+			theEvent.forwardedTouchEvent = true;
+			var element = document.getElementById('aTest');
+			element.dispatchEvent(theEvent);
+		}, 1500);
 	}, false);
 </script> 
 </head> 
